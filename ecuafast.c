@@ -62,7 +62,7 @@ void generar_barco(char *mensaje, char *tipo_carga, char *destino, double *peso)
 int main() {
     srand(time(NULL));
 
-    int n_barcos = 100;
+    int n_barcos = 50;
     printf("La cantidad de barcos a simular es: %d\n", n_barcos);
     
     for (int i = 0; i < n_barcos; i++) {

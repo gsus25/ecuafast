@@ -41,10 +41,10 @@ $ ./puerto
 [PUERTO] Servidor listo en el puerto 1237.
 ```
 
-Y por último para ejecutar ECUAFAST y simular la llegada de 100 barcos:
+Y por último para ejecutar ECUAFAST y simular la llegada de 50 barcos:
 ```bash
 $ ./ecuafast
-La cantidad de barcos a simular es: 100
+La cantidad de barcos a simular es: 50
 [BARCO 1] Mensaje generado: Carga=Porta Convencional, Peso=37402.00, Destino=Ecuador
 [BARCO 1] Resultado: No necesita aforo.
 [BARCO 2] Mensaje generado: Carga=PANAMAX, Peso=53863.00, Destino=USA
@@ -54,7 +54,7 @@ La cantidad de barcos a simular es: 100
 ....
 ```
 
-También se puede ejecutar todo directamente desde un terminal utilizando un script que ejecutará todos los programas y simulará la llegada de 100 barcos:
+También se puede ejecutar todo directamente desde un terminal utilizando un script que ejecutará todos los programas y simulará la llegada de 50 barcos:
 ```bash
 $ ./run.sh
 SRI iniciado con PID 12842
@@ -65,7 +65,7 @@ Puerto iniciado con PID 12845
 [SRI] Servidor iniciado en el puerto 1234 y esperando conexiones...
 [PUERTO] Servidor listo en el puerto 1237.
 [SENAE] Servidor iniciado en el puerto 1235 y esperando conexiones...
-La cantidad de barcos a simular es: 100
+La cantidad de barcos a simular es: 50
 [BARCO 1] Mensaje generado: Carga=PANAMAX, Peso=32424.00, Destino=Ecuador
 [SRI] Cliente conectado.
 [SRI] Mensaje recibido: Carga=PANAMAX, Peso=32424.00, Destino=Ecuador

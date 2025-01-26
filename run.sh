@@ -25,12 +25,24 @@ echo "SUPERCIA iniciado con PID $PID_SUPERCIA"
 PID_PUERTO=$!
 echo "Puerto iniciado con PID $PID_PUERTO"
 
-# Esperar 3 segundos antes de ejecutar ECUAFAST
-sleep 3
+# Esperar 3 segundos para que todo esté listo
+sleep 2
 
 # Ejecutar ECUAFAST
 ./ecuafast
+echo "ECUAFast finalizó."
 
-# Finalizar procesos secundarios
-kill $PID_SRI $PID_SENAE $PID_SUPERCIA $PID_PUERTO
-echo "Todos los procesos finalizados."
+# Esperar explícitamente a que el puerto y las entidades terminen
+wait $PID_PUERTO
+echo "Puerto finalizó."
+
+wait $PID_SRI
+echo "SRI finalizó."
+
+wait $PID_SENAE
+echo "SENAE finalizó."
+
+wait $PID_SUPERCIA
+echo "SUPERCIA finalizó."
+
+echo "Todos los procesos han finalizado correctamente."
